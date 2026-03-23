@@ -34,8 +34,8 @@ REQST_CHANNEL = int(ch) if (ch := environ.get("REQST_CHANNEL", "-1002497903505")
 SUPPORT_CHAT_ID = int(ch) if (ch := environ.get("SUPPORT_CHAT_ID", "-1002844979596")) and id_pattern.search(ch) else None
 
 OWNER = int(os.environ.get("OWNER", "5371238852"))
-CHANNEL_LINK = environ.get('CHANNEL_LINK', 'https://telegram.me/Master_xkid')
-GROUP_LINK = environ.get('GROUP_LINK', 'https://telegram.me/Askmovieslink1')
+CHANNEL_LINK = environ.get('CHANNEL_LINK', 'https://t.me/THANOS_LINKZ')
+GROUP_LINK = environ.get('GROUP_LINK', 'https://t.me/THANOS_LINKZ')
 
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://rajesh:rajeshx@cluster0.2mvzm9d.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Rajesh")
