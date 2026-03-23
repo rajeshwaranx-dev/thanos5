@@ -128,7 +128,7 @@ class script(object):
 
 <b>‣ ꜱɪᴢᴇ : </b>{file_size}
 
-<b>🍁 ʙʏ : <a href="https://telegram.me/Askmovies4">[ Askmovies ]</a></b>"""
+<b>🍁 ʙʏ : <a href="https://t.me/THANOS_LINKZ">[ Thanos_Linkz ]</a></b>"""
 
     IMDB_TEMPLATE_TXT = """<b><a href={url}>{title} (<a href={url}/releaseinfo>{year}</a>)
 
@@ -176,7 +176,7 @@ sʜᴏᴡɴ ɪɴ : {remaining_seconds} <i>sᴇᴄ</i>⚡️
 
 ʏᴏᴜ ᴄᴀɴ ᴘᴜʀᴄʜᴀꜱᴇ ᴘʀᴇᴍɪᴜᴍ ᴛʜʀᴏᴜɢʜ ᴜᴘɪ , ɴᴇᴛ ʙᴀɴᴋɪɴɢ.
 
-💳 <a href='https://TechifyBots.github.io/PayWeb'>ᴘᴀʏ ᴡɪᴛʜ ᴜᴘɪ</a>
+💳 <a href='https://t.me/THANOS_LINKZ'>ᴘᴀʏ ᴡɪᴛʜ ᴜᴘɪ</a>
 
 💢 ᴍᴜꜱᴛ ꜱᴇɴᴅ ꜱᴄʀᴇᴇɴꜱʜᴏᴛ ᴀꜰᴛᴇʀ ᴘᴀʏᴍᴇɴᴛ.
 
