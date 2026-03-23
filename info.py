@@ -41,7 +41,7 @@ DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://rajesh:rajeshx@cluster
 DATABASE_NAME = environ.get('DATABASE_NAME', "Rajeshx")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'thanos')
 MULTIPLE_DB = is_enabled(os.environ.get('MULTIPLE_DB', "True"), False)
-DATABASE_URI2 = environ.get('DATABASE_URI2', "mmongodb+srv://thanos:thanos2@cluster0.6u52un7.mongodb.net/?appName=Cluster0")
+DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://thanos:thanos2@cluster0.6u52un7.mongodb.net/?appName=Cluster0")
 
 UPDATE_NOTIFICATION = bool(environ.get('UPDATE_NOTIFICATION', False))
 UPDATE_CHANNEL = int(environ.get('UPDATE_CHANNEL', '-1002197398349'))
