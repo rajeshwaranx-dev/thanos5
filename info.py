@@ -38,7 +38,7 @@ CHANNEL_LINK = environ.get('CHANNEL_LINK', 'https://telegram.me/Master_xkid')
 GROUP_LINK = environ.get('GROUP_LINK', 'https://telegram.me/Askmovieslink1')
 
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://rajesh:rajeshx@cluster0.2mvzm9d.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-DATABASE_NAME = environ.get('DATABASE_NAME', "Rajeshx")
+DATABASE_NAME = environ.get('DATABASE_NAME', "rajesh")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'thanos')
 MULTIPLE_DB = is_enabled(os.environ.get('MULTIPLE_DB', "True"), False)
 DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://thanos:thanos2@cluster0.6u52un7.mongodb.net/?appName=Cluster0")
