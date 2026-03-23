@@ -16,20 +16,20 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'techifybots')
 API_ID = int(environ.get('API_ID', '23361081'))
 API_HASH = environ.get('API_HASH', '0605c5395b91ead763072251e20c3417')
-BOT_TOKEN = environ.get('BOT_TOKEN', "8361529441:AAGfl604PFp9OHLKyL8kcTnQoBTCo8oXAIg")
+BOT_TOKEN = environ.get('BOT_TOKEN', "8224705384:AAHb78DLhNNgEkRACnZfBa1kp9VnwDUHSWk")
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
 INDEX_CAPTION = bool(environ.get('INDEX_CAPTION', False))
 COVER = bool(environ.get('COVER', False))
-PICS = (environ.get('PICS', 'https://graph.org/file/dc8d94be0c5b2c9693e75-707e6fdfb7fc8d3e2c.jpg')).split()
+PICS = (environ.get('PICS', 'https://graph.org/file/6481f144202e851ef6d4e-40043642bbbb285c6c.jpg')).split()
 MELCOW_PHOTO = environ.get("MELCOW_PHOTO", "https://i.ibb.co/2769f1rF/photo-2025-09-03-14-48-34-7548400762112442372.jpg")
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1714147365 ').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002030715343').split()]
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002289263173'))
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '2141592685 1714147365 5371238852').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1003408754608 -1002030715343').split()]
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1003002276622'))
 BIN_CHANNEL = int(environ.get('BIN_CHANNEL', '0'))
-PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-1002737733323'))
+PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-1003002276622'))
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
-AUTH_CHANNELS = [int(ch) for ch in environ.get("AUTH_CHANNELS", "").split() if ch and id_pattern.match(ch)]
-AUTH_REQ_CHANNELS = [int(ch) for ch in environ.get("AUTH_REQ_CHANNELS", "-1003518468917").split() if ch and id_pattern.match(ch)]
+AUTH_CHANNELS = [int(ch) for ch in environ.get("AUTH_CHANNELS", "-1002853931793").split() if ch and id_pattern.match(ch)]
+AUTH_REQ_CHANNELS = [int(ch) for ch in environ.get("AUTH_REQ_CHANNELS", "").split() if ch and id_pattern.match(ch)]
 REQST_CHANNEL = int(ch) if (ch := environ.get("REQST_CHANNEL", "-1002497903505")) and id_pattern.search(ch) else None
 SUPPORT_CHAT_ID = int(ch) if (ch := environ.get("SUPPORT_CHAT_ID", "-1002844979596")) and id_pattern.search(ch) else None
 
@@ -37,33 +37,33 @@ OWNER = int(os.environ.get("OWNER", "5371238852"))
 CHANNEL_LINK = environ.get('CHANNEL_LINK', 'https://telegram.me/Master_xkid')
 GROUP_LINK = environ.get('GROUP_LINK', 'https://telegram.me/Askmovieslink1')
 
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Rajeshuri2:Rajeshx2@cluster0.sql2rpv.mongodb.net/?appName=Cluster0")
-DATABASE_NAME = environ.get('DATABASE_NAME', "Rajeshuri2")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'RajeshLcu2')
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://rajesh:rajeshx@cluster0.2mvzm9d.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_NAME = environ.get('DATABASE_NAME', "Rajeshx")
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'thanos')
 MULTIPLE_DB = is_enabled(os.environ.get('MULTIPLE_DB', "True"), False)
-DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://RajeshLcu2:Rajeshx@cluster0.0razpdy.mongodb.net/?appName=Cluster0")
+DATABASE_URI2 = environ.get('DATABASE_URI2', "mmongodb+srv://thanos:thanos2@cluster0.6u52un7.mongodb.net/?appName=Cluster0")
 
 UPDATE_NOTIFICATION = bool(environ.get('UPDATE_NOTIFICATION', False))
 UPDATE_CHANNEL = int(environ.get('UPDATE_CHANNEL', '-1002197398349'))
 IMAGE_FETCH = bool(environ.get('IMAGE_FETCH', True))
 LINK_PREVIEW = bool(environ.get('LINK_PREVIEW', False))
 ABOVE_PREVIEW = bool(environ.get('ABOVE_PREVIEW', False))
-TMDB_API_KEY = environ.get('TMDB_API_KEY', '992a90609f7400986165a20903ab9006')
-TMDB_POSTER = bool(environ.get('TMDB_POSTER', True))
+TMDB_API_KEY = environ.get('TMDB_API_KEY', '')
+TMDB_POSTER = bool(environ.get('TMDB_POSTER', False))
 LANDSCAPE_POSTER = bool(environ.get('LANDSCAPE_POSTER', True))
 
 IS_VERIFY = is_enabled('IS_VERIFY', True)
-LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1002289263173'))
+LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1003002276622'))
 VERIFY_IMG = environ.get("VERIFY_IMG", "https://i.ibb.co/xqNtSMpS/photo-2025-09-18-15-24-38-7551450511015149572.jpg")
-TUTORIAL = environ.get("TUTORIAL", "https://t.me/Tutorial01Ask")
-TUTORIAL_2 = environ.get("TUTORIAL_2", "https://t.me/Tutorial01Ask")
-TUTORIAL_3 = environ.get("TUTORIAL_3", "https://t.me/Tutorial01Ask")
-SHORTENER_API = environ.get("SHORTENER_API", "a7ac9b3012c67d7491414cf272d82593c75f6cbb")
-SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", "omegalinks.in")
-SHORTENER_API2 = environ.get("SHORTENER_API2", "a7ac9b3012c67d7491414cf272d82593c75f6cbb")
-SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", "omegalinks.in")
-SHORTENER_API3 = environ.get("SHORTENER_API3", "a7ac9b3012c67d7491414cf272d82593c75f6cbb")
-SHORTENER_WEBSITE3 = environ.get("SHORTENER_WEBSITE3", "omegalinks.in")
+TUTORIAL = environ.get("TUTORIAL", "https://t.me/Tutorial_SRK")
+TUTORIAL_2 = environ.get("TUTORIAL_2", "https://t.me/Tutorial_SRK")
+TUTORIAL_3 = environ.get("TUTORIAL_3", "https://t.me/Tutorial_SRK")
+SHORTENER_API = environ.get("SHORTENER_API", "ac7dd6953898915c0e91f1c92c4427af6cac20ad")
+SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", "arolinks.com")
+SHORTENER_API2 = environ.get("SHORTENER_API2", "ac7dd6953898915c0e91f1c92c4427af6cac20ad")
+SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", "arolinks.com")
+SHORTENER_API3 = environ.get("SHORTENER_API3", "ac7dd6953898915c0e91f1c92c4427af6cac20ad")
+SHORTENER_WEBSITE3 = environ.get("SHORTENER_WEBSITE3", "arolinks.com")
 TWO_VERIFY_GAP = int(environ.get('TWO_VERIFY_GAP', "1200"))
 THREE_VERIFY_GAP = int(environ.get('THREE_VERIFY_GAP', "54000"))
 
