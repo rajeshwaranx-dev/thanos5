@@ -33,7 +33,7 @@ AUTH_REQ_CHANNELS = [int(ch) for ch in environ.get("AUTH_REQ_CHANNELS", "").spli
 REQST_CHANNEL = int(ch) if (ch := environ.get("REQST_CHANNEL", "-1002497903505")) and id_pattern.search(ch) else None
 SUPPORT_CHAT_ID = int(ch) if (ch := environ.get("SUPPORT_CHAT_ID", "-1002844979596")) and id_pattern.search(ch) else None
 
-OWNER = int(os.environ.get("OWNER", "5371238852"))
+OWNER = int(os.environ.get("OWNER", "2141592685"))
 CHANNEL_LINK = environ.get('CHANNEL_LINK', 'https://t.me/THANOS_LINKZ')
 GROUP_LINK = environ.get('GROUP_LINK', 'https://t.me/THANOS_LINKZ')
 
@@ -67,7 +67,7 @@ SHORTENER_WEBSITE3 = environ.get("SHORTENER_WEBSITE3", "arolinks.com")
 TWO_VERIFY_GAP = int(environ.get('TWO_VERIFY_GAP', "1200"))
 THREE_VERIFY_GAP = int(environ.get('THREE_VERIFY_GAP', "54000"))
 
-FAST_MODE = is_enabled(environ.get('FAST_MODE', "False"), False)
+FAST_MODE = is_enabled(environ.get('FAST_MODE', "True"), False)
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 MAX_BTNS = environ.get("MAX_BTNS", "5")
 MSG_ALRT = environ.get('MSG_ALRT', '𝖲𝗁𝖺𝗋𝖾 & 𝖲𝗎𝗉𝗉𝗈𝗋𝗍 ♥️')
