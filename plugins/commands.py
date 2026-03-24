@@ -180,7 +180,7 @@ async def start(client, message):
                     reply_markup = InlineKeyboardMarkup(btn)
                 await message.reply_photo(
                     photo=random.choice(PICS),
-                    caption=(f"{message.from_user.mention}\n\n🛑 நீங்கள் கேட்கும் மூவி  தேவை என்றால், கீழே உள்ள 📥 Movies Channel - லில் சேர வேண்டும் 👇✅
+                    caption=(f"""{message.from_user.mention}\n\n🛑 நீங்கள் கேட்கும் மூவி  தேவை என்றால், கீழே உள்ள 📥 Movies Channel - லில் சேர வேண்டும் 👇✅
 
 அந்த மூவீஸ் சேனலில் இணைந்த பிறகு 🔄 "Try Again Button" கிளிக் செய்யவும் ✅
 
@@ -188,7 +188,7 @@ async def start(client, message):
 
 ❗️ᴘʟᴇᴀꜱᴇ ᴊᴏɪɴ ᴍʏ ᴍᴏᴠɪᴇꜱ ᴄʜᴀɴɴᴇʟ ᴛᴏ ᴜꜱᴇ ᴛʜɪꜱ ʙᴏᴛ 👇
 
-📥 ᴀꜰᴛᴇʀ ᴊᴏɪɴᴇᴅ ᴍᴏᴠɪᴇꜱ ᴄʜᴀɴɴᴇʟ👇 ᴄʟɪᴄᴋ ᴛʀʏ ᴀɢᴀɪɴ ʙᴜᴛᴛᴏɴ ʏᴏᴜʀ ᴀꜱᴋᴇᴅ ꜰɪʟᴇ ᴡɪʟʟ ᴄᴏᴍᴇ ✅."),
+📥 ᴀꜰᴛᴇʀ ᴊᴏɪɴᴇᴅ ᴍᴏᴠɪᴇꜱ ᴄʜᴀɴɴᴇʟ👇 ᴄʟɪᴄᴋ ᴛʀʏ ᴀɢᴀɪɴ ʙᴜᴛᴛᴏɴ ʏᴏᴜʀ ᴀꜱᴋᴇᴅ ꜰɪʟᴇ ᴡɪʟʟ ᴄᴏᴍᴇ ✅."""),
                     reply_markup=reply_markup,
                     parse_mode=enums.ParseMode.HTML
                 )
