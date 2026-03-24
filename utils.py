@@ -143,7 +143,7 @@ async def is_subscribed(bot, user_id, fsub_channels):
             try:
                 chat = await bot.get_chat(int(channel_id))
                 invite_link = await bot.create_chat_invite_link(channel_id)
-                return InlineKeyboardButton(f"{chat.title}", url=invite_link.invite_link)
+                return InlineKeyboardButton("🔔 Join Now", url=invite_link.invite_link)
             except Exception as e:
                 logger.warning(f"Failed to create invite for {channel_id}: {e}")
         except Exception as e:
