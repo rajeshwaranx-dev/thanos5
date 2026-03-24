@@ -5,8 +5,7 @@ class script(object):
 
 <blockquote><i>✨ ꜱᴇᴀʀᴄʜ ᴀɴʏ ᴍᴏᴠɪᴇs ᴄᴏɴᴛᴇɴᴛ ɪɴ ꜱᴇᴄᴏɴᴅ.</i></blockquote></b>"""
 
-    ABOUT_TXT = """<b>‣ ᴍʏ ɴᴀᴍᴇ : <a href=https://telegram.me/{}>{}</a>
-‣ ᴄʀᴇᴀᴛᴏʀ : <a href='https://telegram.me/Master_Xkid'>Master</a> 
+    ABOUT_TXT = """<b>‣ ᴍʏ ɴᴀᴍᴇ : <a href=https://telegram.me/{}>{}</a> 
 ‣ ᴏᴡɴᴇʀ : <a href='https://telegram.me/Thanos_ceo'>Thanos</a>
 ‣ ʟɪʙʀᴀʀʏ : <a href='https://docs.pyrogram.org/'>ᴘʏʀᴏɢʀᴀᴍ</a>
 ‣ ʟᴀɴɢᴜᴀɢᴇ : <a href='https://www.python.org/download/releases/3.0/'>ᴘʏᴛʜᴏɴ 𝟹</a> 
