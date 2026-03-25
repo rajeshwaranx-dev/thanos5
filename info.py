@@ -64,7 +64,7 @@ SHORTENER_API2 = environ.get("SHORTENER_API2", "ac7dd6953898915c0e91f1c92c4427af
 SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", "arolinks.com")
 SHORTENER_API3 = environ.get("SHORTENER_API3", "ac7dd6953898915c0e91f1c92c4427af6cac20ad")
 SHORTENER_WEBSITE3 = environ.get("SHORTENER_WEBSITE3", "arolinks.com")
-TWO_VERIFY_GAP = int(environ.get('TWO_VERIFY_GAP', "1200"))
+TWO_VERIFY_GAP = int(environ.get('TWO_VERIFY_GAP', "36000"))
 THREE_VERIFY_GAP = int(environ.get('THREE_VERIFY_GAP', "54000"))
 
 FAST_MODE = is_enabled(environ.get('FAST_MODE', "True"), False)
