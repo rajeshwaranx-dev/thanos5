@@ -1148,9 +1148,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     InlineKeyboardButton('⇒ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⇐', url=f'https://t.me/{temp.U_NAME}?startgroup=start')
                 ],[
             
-                    InlineKeyboardButton('ᴜᴘɢʀᴀᴅᴇ 🎫', callback_data='premium_info')
-                    InlineKeyboardButton('ᴀʙᴏᴜᴛ 📜', callback_data='about'),
-                
+                    InlineKeyboardButton('ᴜᴘɢʀᴀᴅᴇ 🎫', callback_data='premium_info'),
+                    InlineKeyboardButton('ᴀʙᴏᴜᴛ 📜', callback_data='about')
                 ],[
                     InlineKeyboardButton('ᴄᴏɴᴛᴀᴄᴛ ᴀᴅᴍɪɴ ☎️', url='https://telegram.me/master_xkid')
                 ]]
