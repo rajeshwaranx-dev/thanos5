@@ -1151,7 +1151,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     InlineKeyboardButton('ᴜᴘɢʀᴀᴅᴇ 🎫', callback_data='premium_info'),
                     InlineKeyboardButton('ᴀʙᴏᴜᴛ 📜', callback_data='about')
                 ],[
-                    InlineKeyboardButton('ᴄᴏɴᴛᴀᴄᴛ ᴀᴅᴍɪɴ ☎️', url='https://telegram.me/master_xkid')
+                    InlineKeyboardButton('ᴄᴏɴᴛᴀᴄᴛ ᴀᴅᴍɪɴ ☎️', url='https://telegram.me/thanos_ceo')
                 ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_media(
@@ -1167,7 +1167,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "about":
         buttons = [[
             InlineKeyboardButton('ᴅᴍᴄᴀ 📝', callback_data='dmca'),
-            InlineKeyboardButton ('DONATE', callback_data='donate')
+            InlineKeyboardButton ('ᴅᴏɴᴀᴛᴇ 💰', callback_data='donate')
         ],[
             InlineKeyboardButton('⋞ ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ', callback_data='start')
         ]]
@@ -1300,7 +1300,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "buy_info":
         btn = [[
-            InlineKeyboardButton('UPI 💳', url='https://askpayments.vercel.app/')
+            InlineKeyboardButton('ᴜᴘɪ 💳', url='https://thanospayments.vercel.app/')
         ],[
             InlineKeyboardButton('📲 ꜱᴇɴᴅ  ᴘᴀʏᴍᴇɴᴛ ꜱᴄʀᴇᴇɴꜱʜᴏᴛ 📲', user_id=int(OWNER))
         ],[
