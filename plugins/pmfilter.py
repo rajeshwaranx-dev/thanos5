@@ -1267,7 +1267,17 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup
         )
 
-    elif query.data == "premium_info":
+    
+
+    elif query.data == "star_info":
+        btn = [
+            InlineKeyboardButton(f"{stars} ⭐", callback_data=f"buy_{stars}")
+            for stars, days in STAR_PREMIUM_PLANS.items()
+            ]
+        buttons = [btn[i:i + 2] for i in range(0, len(btn), 2)]
+        buttons.append([InlineKeyboardButton("⋞ ʙᴀᴄᴋ", callback_data="buy_info")])
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_meelif query.data == "premium_info":
         btn = [[
             InlineKeyboardButton('💎 ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ 💎', callback_data='buy_info')
         ],[
@@ -1288,15 +1298,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "buy_info":
         btn = [[
-            InlineKeyboardButton('ꜱᴛᴀʀ 🌟', callback_data='star_info'),
-            InlineKeyboardButton('ᴜᴘɪ 💳', callback_data='upi_info')
+            InlineKeyboardButton('UPI 💳', url='https://thanospayments.vercel.app/')
+        ],[
+            InlineKeyboardButton('📲 ꜱᴇɴᴅ  ᴘᴀʏᴍᴇɴᴛ ꜱᴄʀᴇᴇɴꜱʜᴏᴛ 📲', user_id=int(OWNER))
         ],[
             InlineKeyboardButton('⋞ ʙᴀᴄᴋ', callback_data='premium_info')
         ]]
         reply_markup = InlineKeyboardMarkup(btn)
         await query.message.edit_media(
             media=InputMediaPhoto(
-                media=random.choice(PICS),
+                media=QR_PIC if QR_PIC else random.choice(PICS),
                 caption=script.PREMIUM_TEXT,
                 parse_mode=enums.ParseMode.HTML
             ),
@@ -1310,24 +1321,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('⋞ ʙᴀᴄᴋ', callback_data='buy_info')
         ]]
         reply_markup = InlineKeyboardMarkup(btn)
+        qr_photo = QR_PIC if QR_PIC else random.choice(PICS)
         await query.message.edit_media(
             media=InputMediaPhoto(
-                media=random.choice(PICS),
+                media=qr_photo,
                 caption=script.PREMIUM_UPI_TEXT,
                 parse_mode=enums.ParseMode.HTML
             ),
             reply_markup=reply_markup
         )
-
-    elif query.data == "star_info":
-        btn = [
-            InlineKeyboardButton(f"{stars} ⭐", callback_data=f"buy_{stars}")
-            for stars, days in STAR_PREMIUM_PLANS.items()
-            ]
-        buttons = [btn[i:i + 2] for i in range(0, len(btn), 2)]
-        buttons.append([InlineKeyboardButton("⋞ ʙᴀᴄᴋ", callback_data="buy_info")])
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_media(
+        await query.answer()dia(
             media=InputMediaPhoto(
                 media=random.choice(PICS),
                 caption=script.PREMIUM_STAR_TEXT,
